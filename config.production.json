@@ -1,0 +1,27 @@
+{
+  "url": "https://your-app-name.up.railway.app",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "mysql",
+    "connection": {
+      "host": "${MYSQLHOST}",
+      "port": "${MYSQLPORT}",
+      "user": "${MYSQLUSER}",
+      "password": "${MYSQLPASSWORD}",
+      "database": "${MYSQLDATABASE}"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": ["stdout"]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "content"
+  }
+}

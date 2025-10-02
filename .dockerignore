@@ -1,0 +1,5 @@
+.git
+node_modules
+content/
+.cache/
+.DS_Store
